@@ -1,0 +1,18 @@
+﻿<Window x:Class="Biblioteka38cet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka38cet"
+        mc:Ignorable="d"
+        Title="BIBLIOTEKA" Height="400" Width="1020" Background="#ecefd5">
+    <Grid>
+        <Label Content="Naziv knjige:" HorizontalAlignment="Left" Margin="69,51,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="187,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="30" Name="txtNazivKnjige"/>
+        <Label Content="Naziv autora:" HorizontalAlignment="Left" Margin="69,113,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="187,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="30" Name="txtNazivAutora"/>
+        <Button Content="DODAJ KNJIGU" Background="Bisque" HorizontalAlignment="Left" Margin="417,79,0,0" VerticalAlignment="Top" Width="126" Height="47" Name="Dodaj" Click="Dodaj_Click"/>
+        <DataGrid Margin="200,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto" Height="auto" IsReadOnly="True" CanUserAddRows="False" Name="DGCentralni" AlternatingRowBackground="Bisque"/>
+
+    </Grid>
+</Window>
